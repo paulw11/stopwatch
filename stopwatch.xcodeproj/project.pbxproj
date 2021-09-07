@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB52ED3F26E794B800388362 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB52ED3E26E794B800388362 /* README.md */; };
+		BB52ED4126E795E700388362 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB52ED4026E795E700388362 /* README.md */; };
 		BB63790B26E62BC700B3AC30 /* StopwatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB63790A26E62BC700B3AC30 /* StopwatchApp.swift */; };
 		BB63790D26E62BC700B3AC30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB63790C26E62BC700B3AC30 /* ContentView.swift */; };
 		BB63790F26E62BC800B3AC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB63790E26E62BC800B3AC30 /* Assets.xcassets */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB52ED3E26E794B800388362 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB52ED4026E795E700388362 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BB63790726E62BC700B3AC30 /* stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB63790A26E62BC700B3AC30 /* StopwatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchApp.swift; sourceTree = "<group>"; };
 		BB63790C26E62BC700B3AC30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +42,7 @@
 		BB6378FE26E62BC700B3AC30 = {
 			isa = PBXGroup;
 			children = (
+				BB52ED4026E795E700388362 /* README.md */,
 				BB63790926E62BC700B3AC30 /* stopwatch */,
 				BB63790826E62BC700B3AC30 /* Products */,
 			);
@@ -65,7 +66,6 @@
 				BB63790E26E62BC800B3AC30 /* Assets.xcassets */,
 				BB63791326E62BC800B3AC30 /* Info.plist */,
 				BB63791026E62BC800B3AC30 /* Preview Content */,
-				BB52ED3E26E794B800388362 /* README.md */,
 			);
 			path = stopwatch;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB52ED3F26E794B800388362 /* README.md in Resources */,
+				BB52ED4126E795E700388362 /* README.md in Resources */,
 				BB63791226E62BC800B3AC30 /* Preview Assets.xcassets in Resources */,
 				BB63790F26E62BC800B3AC30 /* Assets.xcassets in Resources */,
 			);
