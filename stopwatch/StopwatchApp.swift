@@ -11,7 +11,7 @@ import SwiftUI
 struct StopwatchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(Stopwatches())
+            ContentView()
         }
     }
 }

@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var stopwatches:Stopwatches
+    @StateObject var stopwatches = Stopwatches()
     var body: some View {
         VStack {
             HStack {
                 Text("Timers").font(.largeTitle)
                 Spacer()
-                Button(action: { self.stopwatches.addTimer()}) {
-                    Image(systemName: "plus.circle").resizable().frame(width: 30, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Button(action: { self.stopwatches.add()}) {
+                    Image(systemName: "plus.circle").resizable().frame(width: 30, height: 30, alignment: .center)
                 }
             }.padding()
+            
             List {
                 ForEach(self.stopwatches.timers) { stopwatch in
                     HStack {
@@ -29,13 +30,12 @@ struct ContentView: View {
                     self.stopwatches.delete(indexSet: indexSet)
                 })
             }
-            
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(Stopwatches())
+        ContentView()
     }
 }
