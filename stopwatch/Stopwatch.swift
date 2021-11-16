@@ -45,7 +45,7 @@ class Stopwatch: ObservableObject, Identifiable {
     
     private func start() -> Void {
         self.timer?.cancel()
-        self.timer = Timer.publish(every: 0.5, on: .main, in: .default).autoconnect().sink { _ in
+        self.timer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect().sink { _ in
             self.elapsedTime = self.getElapsedTime()
         }
         self.startTime = Date()
